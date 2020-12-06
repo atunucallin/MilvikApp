@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "291909728437",
+    "project_id": "milvikapp-2dca1",
+    "storage_bucket": "milvikapp-2dca1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291909728437:android:8fb9cac66d2152afaba6fc",
+        "android_client_info": {
+          "package_name": "com.atashitech.milvikapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291909728437-0hpd48n3ouvg7koe0du9itt4oha75u2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.atashitech.milvikapp",
+            "certificate_hash": "a48b92bc6cedffbae28c73a0c7b8965194ae2327"
+          }
+        },
+        {
+          "client_id": "291909728437-veev39p2tp1f37418k52eqkpauovmpmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuiFLKjxvs7DF59QHb-Bowb0T98WKB2NU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291909728437-veev39p2tp1f37418k52eqkpauovmpmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
