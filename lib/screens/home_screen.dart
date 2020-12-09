@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:milvikapp/model/contacts.dart';
+import 'package:milvikapp/services/auth_services.dart';
 import 'package:milvikapp/view_model/contacts_view_model.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +19,19 @@ class _DashboardState extends State<Dashboard> {
         appBar: AppBar(
           // 2
           title: Text('Dashboard'),
+          actions: [
+            Padding(
+                padding: EdgeInsets.only(right: 20.0),
+                child: GestureDetector(
+                  onTap: () {
+                    AuthService().signOut();
+                  },
+                  child: Icon(
+                    Icons.more_vert,
+                    size: 26.0,
+                  ),
+                )),
+          ],
         ),
         // 3
         body: ModalProgressHUD(
@@ -41,7 +55,7 @@ class _DashboardState extends State<Dashboard> {
                                 contact.description ?? "",
                                 style: TextStyle(color: Colors.grey),
                               ),
-                              trailing: Icon(Icons.more_vert),
+                              trailing: Icon(Icons.arrow_right),
                               isThreeLine: true,
                               onTap: () {
                                 /*Navigator.push(

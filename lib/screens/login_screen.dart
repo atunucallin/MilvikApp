@@ -194,12 +194,6 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
-  openCountryScreen() {
-    /*print('COUNTRY CLICKED');
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => ChooseCountry()));*/
-  }
-
   Future<String> showAlertDialog(BuildContext context) {
     showDialog(
         context: context,
@@ -242,18 +236,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         .signInWithOTP(verId: verificationId, smsCode: smsCode)
                         .catchError((error) {
                       Fluttertoast.showToast(msg: error.toString());
+                      print('MOBILE Number Entered $error.toString');
                     });
                   } else {
                     print("FAKE ELSE");
                   }
-                  //   Navigator.of(context).pop(controller.text.toString());
-                  /*AuthService()
-                      .signInWithOTP(verId: verificationId, smsCode: smsCode);*/
-                  /*Navigator.pop(context);
-                  SharedPreferences prefs = await SharedPreferences.getInstance();
-                  prefs.remove('isLogin');
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (BuildContext ctx) => LoginScreen()));*/
                 },
                 child: Text('Submit')),
           ],
